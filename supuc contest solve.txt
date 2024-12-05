@@ -1,0 +1,140 @@
+[11:03 PM, 6/7/2023] +880 1784-618077: B:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    while(n--)
+    {
+        int a,b;
+        cin>>a>>b;
+        if(a+b>6)
+            cout<<"YES"<<endl;
+
+    else
+        cout<<"NO"<<endl;
+}
+    return 0;
+}
+[11:03 PM, 6/7/2023] +880 1784-618077: C:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+
+{
+    string a;
+    cin>>a;
+    int count=0;
+    for(int i=0; i<a.size(); i++)
+    {
+        if(a[i]=='H'||a[i]=='Q'||a[i]=='9')
+        {
+            count=1;
+        }
+else
+{
+    continue;
+}
+    }
+    if(count==1)
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+
+return 0;
+}
+[11:03 PM, 6/7/2023] +880 1784-618077: D:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b,c,temp,temp1;
+        cin>>a>>b>>c;
+         temp=max(a,b);
+         temp=max(temp,c);
+        temp1=min(a,b);
+        temp1=min(temp1,c);
+        if(a!=temp&&a!=temp1)
+        {
+            cout<<a<<endl;
+        }
+        else if(b!=temp&&b!=temp1)
+        {
+            cout<<b<<endl;
+        }
+        else
+        {
+            cout<<c<<endl;
+        }
+}
+
+
+    return 0;
+}
+[11:03 PM, 6/7/2023] +880 1784-618077: E:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,len;
+    string a;
+    cin>>n;
+    while(n--)
+    {
+        cin>>a;
+        len=a.size();
+        if(len<=10)
+            cout<<a<<endl;
+        else
+            cout<<a[0]<<len-2<<a[len-1]<<endl;
+    }
+    return 0;
+}
+[11:04 PM, 6/7/2023] +880 1784-618077: F:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int x;
+    cin>>x;
+    while(1)
+    {
+        x++;
+        int a=x/1000;
+        int b=x/100%10;
+        int c=x/10%10;
+        int d=x%10;
+        if(a!=b&&a!=c&&a!=d&&b!=c&&b!=d&&c!=d)
+        break;
+    }
+    cout<<x<<endl;
+
+   return 0;
+
+}
+[11:04 PM, 6/7/2023] +880 1784-618077: G:
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a;
+        string s;
+        cin>>a>>s;
+        sort(s.begin(),s.end());
+        int temp=s[a-1];
+        cout<<temp-96<<endl;
+
+    }
+    return 0;
+}
